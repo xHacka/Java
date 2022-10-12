@@ -10,5 +10,6 @@
 
 ```
 git clone https://github.com/xHacka/Java.git
+git fetch
 git switch Quiz{N}
 ```
