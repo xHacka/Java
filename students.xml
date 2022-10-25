@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student Group="1">
+        <firstname>Name 1</firstname>
+        <lastname>Lastname 1</lastname>
+    </student>
+    <student Group="2">
+        <firstname>Name 2</firstname>
+        <lastname>Lastname 2</lastname>
+    </student>
+    <student Group="3">
+        <firstname>Name 3</firstname>
+        <lastname>Lastname 3</lastname>
+    </student>
+    <student Group="4">
+        <firstname>Name 4</firstname>
+        <lastname>Lastname 4</lastname>
+    </student>
+    <student Group="5">
+        <firstname>Name 5</firstname>
+        <lastname>Lastname 5</lastname>
+    </student>
+</students>
