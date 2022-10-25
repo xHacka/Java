@@ -4,8 +4,8 @@
 
 |  Quiz  | Branch |
 |:------:|:------:|
-| Quiz 1 |  Quiz1 |
-|Lecture 6| Lecture6-XML|
+| Quiz 1 |  [Quiz1](https://github1s.com/xHacka/Java/tree/Quiz1) |
+|Lecture 6| [Lecture6-XML](https://github1s.com/xHacka/Java/tree/Lecture6-XML)|
 
 ## How To Use
 
