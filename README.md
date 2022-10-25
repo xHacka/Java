@@ -1,6 +1,6 @@
 # Java Course (JVM)
 
-## Quizs Will Be Placed On Branches
+## Branches Are Used As Folders
 
 |  Quiz  | Branch |
 |:------:|:------:|
