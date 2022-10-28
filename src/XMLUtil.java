@@ -59,7 +59,8 @@ public class XMLUtil {
 
     public static List<Student> parseXML(String filename) throws ParserConfigurationException, IOException, SAXException {
         filename = filename.endsWith("xml") ? filename : (filename + ".xml");
-        Document doc = DocumentBuilderFactory.newInstance()
+        Document doc = DocumentBuilderFactory
+                      .newInstance()
                       .newDocumentBuilder()
                       .parse(new File(filename));
         doc.normalizeDocument();
