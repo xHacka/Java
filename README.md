@@ -32,5 +32,5 @@ git switch {Branch}
 ![Third Step](./imgs/img3.png)
 
 - Can Also Be Ran From Terminal To Different Server
-    *     $ java ./src/MyGroupChat.java <host>    <port>
-    * e.g.: java ./src/MyGroupChat.java 224.0.0.0 8800
+    * `java ./src/MyGroupChat.java <host> <port>`
+    * e.g.: `java ./src/MyGroupChat.java 224.0.0.0 8800`
