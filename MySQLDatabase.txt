@@ -1,0 +1,14 @@
+Free MySQL Server: https://remotemysql.com/
+
+Email: gofibim289@ceoshub.com
+Password: Password123$
+
+Database name: seHc2Pcy82
+Username: seHc2Pcy82
+Password: XZKC1IELsM
+
+Server: remotemysql.com
+Port: 3306
+
+Dashboard: https://remotemysql.com/databases.php
+PHPAdmin: https://remotemysql.com/phpmyadmin/index.php?db=seHc2Pcy82
