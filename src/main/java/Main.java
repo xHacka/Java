@@ -1,35 +1,58 @@
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
         // Create students Table
         System.out.println("Creating Table...");
-        StudentUtils.createTable();
+        ProductUtils.createTable();
 
         // Dummy Data
-        List<Student> studentsData = StudentUtils.genDummyData();
+        List<Product> data = ProductUtils.sampleData();
 
         // Insert Into The Database
+        // IDK Why It Keeps Rounding...........
         System.out.println("\nInserting Data...");
-        studentsData.forEach(StudentUtils::insert);
+        data.forEach(ProductUtils::insert);
 
         // Get Students
-        System.out.println("\nGetting All Student Data...");
-        List<Student> students = StudentUtils.getAll();
-        students.forEach(System.out::println);
+        System.out.println("\nGetting All Product Data...");
+        List<Product> products = ProductUtils.getAll();
+        products.forEach(System.out::println);
 
-        // Update student Name
+        // Get By Name
+        System.out.println("\nGetting 'Car Apparatus' By Name");
+        List<Product> carApparatus = ProductUtils.getProductBy("name", "Car Apparatus");
+        carApparatus.forEach(System.out::println);
+
+        // Get By Quantity
+        System.out.println("\nGetting 'Car Apparatus' By Quantity");
+        List<Product> carApparatusQuantities = ProductUtils.getProductBy("quantity", "43");
+        carApparatusQuantities.forEach(System.out::println);
+
+        // Update product Name
         System.out.println("\nUpdating Name...");
-        StudentUtils.updateStudentFirstname(3, "Bob");
+        ProductUtils.updateProductField(1, "name", "Camping Kit");
 
-        // Delete student
-        System.out.println("\nDeleting Student...");
-        StudentUtils.deleteStudent(3);
+        // Get { Product: Total Quantity }
+        System.out.println("\nGetting Product: Total Quantity...");
+        Map<String, Integer> productQuantities = ProductUtils.getQuantities("products");
+        productQuantities.forEach(
+                (name, quantity) -> System.out.printf("Product: %s, Quantity: %d\n", name, quantity)
+        );
 
-        // Delete All Students
-        System.out.println("\nDeleting All Students...");
-        StudentUtils.deleteAllStudents();
+        // Delete product
+        System.out.println("\nDeleting Product...");
+        ProductUtils.deleteProduct(7);
+
+        // Delete All Products
+        System.out.println("\nDeleting All Products...");
+        ProductUtils.deleteAll();
+
+        // Deleting Table
+        System.out.println("\nDeleting Table...");
+        ProductUtils.deleteTable("products");
         System.out.println();
     }
 }

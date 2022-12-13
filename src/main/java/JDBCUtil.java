@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class JDBCUtil {
 
@@ -28,5 +25,34 @@ public class JDBCUtil {
             }
         }
         return statement;
+    }
+
+    public static void execute(String query) {
+        try {
+            JDBCUtil.getStatement().execute(query);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void executeUpdate(String query) {
+        try {
+            JDBCUtil.getStatement().executeUpdate(query);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static ResultSet executeQuery(String query) {
+        try {
+            return JDBCUtil.getStatement().executeQuery(query);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void resetIndex(String table) {
+        String query = String.format("ALTER TABLE %s AUTO_INCREMENT = 1", table);
+        JDBCUtil.execute(query);
     }
 }
