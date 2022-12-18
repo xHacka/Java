@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacourse.charts.ChartsController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="80.0" layoutY="36.0" prefHeight="303.0" prefWidth="346.0" title="Pie Chart" />
+      <LineChart fx:id="lineChart" layoutX="568.0" layoutY="36.0" prefHeight="325.0" prefWidth="340.0" title="Line Chart">
+        <xAxis>
+          <NumberAxis side="BOTTOM" fx:id="lineChartXAxis"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" fx:id="lineChartYAxis"/>
+        </yAxis>
+      </LineChart>
+      <BubbleChart fx:id="bubbleChart" layoutX="83.0" layoutY="381.0" prefHeight="325.0" prefWidth="340.0" title="Bubble Chart">
+        <xAxis>
+          <NumberAxis side="BOTTOM" fx:id="bubbleChartXAxis"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" fx:id="bubbleChartYAxis"/>
+        </yAxis>
+      </BubbleChart>
+      <BarChart fx:id="barChart" layoutX="551.0" layoutY="381.0" prefHeight="325.0" prefWidth="393.0" title="Bar Chart">
+        <xAxis>
+          <CategoryAxis fx:id="barChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="barChartYAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

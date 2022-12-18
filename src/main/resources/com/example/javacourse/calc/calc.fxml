@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbox" prefHeight="250.0" prefWidth="300.0" spacing="10"
+      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+      fx:controller="com.example.javacourse.calc.CalcController">
+    <style>
+        -fx-padding: 10;
+        -fx-border-style: solid inside;
+        -fx-border-width: 2;
+        -fx-border-insets: 5;
+        -fx-border-radius: 5;
+        -fx-border-color: blue;
+    </style>
+    <Label fx:id="firstNum" text="First Number:"/>
+    <TextField fx:id="firstNumInput" maxWidth="200.0"/>
+    <Label fx:id="secondNum" text="Second Number:"/>
+    <TextField fx:id="secondNumInput" maxWidth="200.0"/>
+    <Group style="-fx-font-size: 16px">
+        <Button fx:id="increment" contentDisplay="CENTER" text="+" textAlignment="CENTER"
+                onMouseClicked="#incrementAction"/>
+        <Button fx:id="decrement" alignment="CENTER_RIGHT" contentDisplay="CENTER" text=" - " textAlignment="CENTER"
+                translateX="40" onMouseClicked="#decrementAction"/>
+    </Group>
+    <Text fx:id="outputText" text="_" style="-fx-font-size: 16px"/>
+</VBox>
