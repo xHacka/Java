@@ -29,8 +29,8 @@ git switch {Branch}
 ## Features
 
 1. In Application You Can See Flights Data In Tabular Format
-<img src="./imgs/db_data.jpg" alt="MySQL DB Data">
-<img src="./imgs/app_img.jpg" alt="MySQL DB Data">
+    - <img src="./imgs/db_data.jpg" alt="MySQL DB Data">
+    - <img src="./imgs/app_img.jpg" alt="MySQL DB Data">
 2. Add Button
     - Add Custom Flight
     - Generate `n` Random Records
