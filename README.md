@@ -37,4 +37,4 @@ git switch {Branch}
 3. Statistics Button
     - Displays Barchart Data Based On Countries And Flights
 4. Right Click On Row
-    - Shows Context Menu To Delete Row (With Confirmation)
+    - Shows Context Menu To Delete Row (With Confirmation) 
