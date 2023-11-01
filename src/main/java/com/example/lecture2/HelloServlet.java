@@ -1,4 +1,4 @@
-package com.example.webapp1;
+package com.example.lecture2;
 
 import java.io.*;
 import jakarta.servlet.http.*;
@@ -22,6 +22,7 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
-    public void destroy() {
-    }
+    public void destroy() {}
+
+
 }
